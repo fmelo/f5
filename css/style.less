@@ -1,0 +1,411 @@
+@import "bootstrap.min.css";
+
+// COLORS
+@color-var: #9d3a12;
+@white: #fff;
+@green: #268700;
+@red: #cb0101;
+@face: #3b5998;
+@twit: #00aced;
+
+// VARS
+.radius (@radius){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+	-webkit-box-shadow: @style @c;
+	-moz-box-shadow: @style @c;
+	box-shadow: @style @c;
+}
+
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+	.box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+body{
+	background: url(../img/pattern.png) repeat fixed;
+	font-family: 'Open Sans', sans-serif;
+}
+
+// Nav Toggle
+.navbar-default{
+	.navbar-toggle{
+		border-color: @color-var;
+		.icon-bar{
+			background-color: @color-var;
+		}
+		&:hover, &:focus{
+			background-color: @color-var;
+			.icon-bar{
+				background-color: @white;
+			}
+		}
+	}
+}
+
+// Header
+header{
+	.login{
+		padding-right: 2px;
+		.form-control{
+			.radius(20px);
+			background-color: rgba(255, 255, 255, 0.1);
+			border: none;
+			margin: 10px 0;
+			text-align: center;
+			font-size: 12px;
+			color: @white;
+		}
+	}
+	.submit-btn{
+		padding-left: 0;
+		text-align: left;
+		button.btn{
+			width: 50px;
+			height: 50px;
+			padding: 0;
+			line-height: 50px;
+			.radius(50%);
+			background-color: rgba(0, 0, 0, 0.4);
+			text-align: center;
+			color: #fff;
+			margin-top: 24px;
+		}
+	}
+}
+
+// Nav
+.navbar-default{
+	background-color: rgba(0, 0, 0, 0.3);
+	border: none;
+	margin-bottom: -50px;
+	.radius(0);
+	.navbar-brand{color: @white; font-size: 28px;}
+	.navbar-nav{
+		li{
+			a{
+				color: #fff;
+				font-size: 18px;
+				&:hover{
+					color: @color-var;
+				}
+			}
+			&.active{
+				a{
+					color: @color-var;
+					text-decoration: underline;
+					background-color: transparent;
+					&:hover, &:focus{
+						color: @color-var;
+						text-decoration: underline;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+#nav.affix {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 0;
+}
+
+h2{
+	font-weight: 600;
+	color: @color-var;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	margin: 0;
+	font-size: 22px;
+	.radius(20px 20px 0 0);
+	padding: 10px 0;
+}
+
+.divider-top{padding-top: 100px;}
+
+// HORARIOS
+.horarios{
+	ul.nav-tabs{
+		// float: left;
+		position: absolute;
+		// left: 0;
+		width: 130px;
+		border: none;
+		li{
+			float: none;
+			margin-bottom: 5px;
+			&.active{
+				a{
+					background-color: rgba(0, 0, 0, 0.4);
+					color: @color-var;
+				}
+			}
+			a{
+				color: @white;
+				border: none;
+				background-color: rgba(0, 0, 0, 0.2);
+				font-size: 16px;
+				.radius(20px 0 0 20px);
+				&:hover, &:focus{
+					color: @color-var;
+					border: none;
+					background-color: rgba(0, 0, 0, 0.4);
+					outline: none;
+				}
+			}
+		}
+	}
+	.tab-content{
+		margin-left: 128px;
+		.tab-pane{
+			min-height: 350px;
+			padding-bottom: 10px;
+			background-color: rgba(0, 0, 0, 0.4);
+			.radius(0 20px 20px 20px);
+			.panel{
+				.radius(0);
+				.box-shadow(0 0 0 0, 0%);
+				background-color: transparent;
+				border: none;
+				table.table{
+					text-align: center;
+					thead{
+						border-width: 0;
+						tr{
+							border-width: 0;
+							th{
+								text-align: inherit;
+								border-width: 0;
+								color: @white;
+								font-size: 18px;
+							}
+						}
+					}
+					tbody{
+						color: @white;
+						span{
+							color: @green;
+							font-weight: 600;
+							&.ocuped{
+								color: @red;
+							}
+						}
+						a{
+							display: block;
+							margin: 0 auto;
+							max-width: 150px;
+							background-color: rgba(0, 0, 0, 0.5);
+							padding: 4px 0;
+							.radius(18px);
+							color: @white;
+							&:hover{
+								text-decoration: none;
+							}
+							&.disable{
+								cursor: auto;
+								opacity: 0.3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{border-top: none;}
+}
+
+// COMO LLEGAWR
+.como-llegar{
+	background-color: rgba(0, 0, 0, 0.4);
+	.radius(20px);
+	overflow: hidden;
+	iframe{
+		width: 100%;
+		height: 500px;
+		float: left;
+	}
+}
+
+// GALERIA
+.galeria{
+	background-color: rgba(0, 0, 0, 0.4);
+	.radius(20px);
+	overflow: hidden;
+	.carousel-caption{
+		background-color: rgba(0, 0, 0, 0.4);
+		left: 0;
+		right: 0;
+		bottom: 25px;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 24px;
+		padding-top: 10px;
+	}
+	.carousel-indicators{
+		li{
+			border-color: rgba(255, 255, 255, 0.5);
+			border-width: 2px;
+		}
+		.active{
+			background-color: @color-var;
+			border-color: @color-var;
+		}
+	}
+}
+
+// CONTACTO
+.contacto{
+	background-color: rgba(0, 0, 0, 0.4);
+	.radius(20px);
+	overflow: hidden;
+	padding: 20px;
+	.form-control{
+		.radius(15px);
+		border: none;
+		background-color: rgba(255, 255, 255, 0.3);
+		margin-bottom: 10px;
+		color: @white;
+	}
+	textarea{
+		min-height: 180px;
+		overflow: hidden;
+	}
+	.btn-block{
+		background-color: @color-var;
+		.radius(20px);
+		color: @white;
+		font-weight: 600;
+		font-size: 16px;
+	}
+	h3{
+		color: @color-var;
+		font-size: 18px;
+		text-align: right;
+		font-weight: 600;
+		margin: 10px 0 0 0;
+	}
+	p{
+		color: @white;
+		font-size: 16px;
+		text-align: right;
+		font-weight: 400;
+		margin: 0 0 20px 0;
+	}
+}
+
+// FOOTER
+footer{
+	margin-top: 80px;
+	padding-bottom: 10px;
+	ul.navbar-nav{
+		float: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			float: none;
+			a{
+				font-size: 15px !important;
+			}
+		}
+	}
+	h4{
+		text-align: center;
+		a{
+			margin: 0 10px;
+			font-size: 28px;
+			.fa-facebook{color: @face;}
+			.fa-twitter{color: @twit;}
+			&:hover{text-decoration: none;}
+		}
+	}
+	h5{
+		color: @white;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: center;
+		padding: 0 0 10px 0;
+		margin: 0;
+	}
+}
+
+// MEDIA QUERIES
+@media (max-width: 1154px){
+	h2{font-size: 20px;}
+}
+
+@media (max-width: 768px){
+	h2{font-size: 18px;}
+	.contacto{
+		h3,p{
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.horarios{
+		ul.nav-tabs{
+			width: 90px;
+			li{
+				a{
+					font-size: 13px;
+				}
+			}
+		}
+		.tab-content{
+			margin-left: 88px;
+			.tab-pane{
+				.panel{
+					table.table{
+						thead{
+							tr{
+								th{
+									padding-left: 0;
+									padding-right: 0;
+									font-size: 14px;
+								}
+							}
+						}
+						tbody{
+							tr{
+								td{
+									padding-left: 0;
+									padding-right: 0;
+									font-size: 12px;
+									a{
+										font-size: 11px;
+										margin-right: 10px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.como-llegar{
+		iframe{
+			height: 300px;
+		}
+	}
+	.galeria{
+		.carousel-caption{display:none;}
+	}
+	footer{
+		nav{display: none;}
+	}
+}
+
+
+

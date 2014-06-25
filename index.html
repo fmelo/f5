@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FUTBOL 5</title>
+		<!-- Font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+		<!-- Font awesome -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Styles -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body data-spy="scroll" data-target=".navbar-collapse">
+	<!-- Header -->
+		<header class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-3 col-sm-offset-7 col-md-2 col-md-offset-8 login">
+					<input type="text" name="" value="" placeholder="Usuario" class="form-control">
+					<input type="password" name="" value="" placeholder="Password" class="form-control">
+				</div>
+				<div class="hidden-xs col-sm-2 submit-btn">
+					<button type="submit" class="btn"><span class="glyphicon glyphicon-chevron-right"></span></button>
+				</div>
+			</div>
+		</header>
+	<!-- Menu -->
+		<nav class="navbar navbar-default" role="navigation" id="nav" data-spy="affix" data-offset-top="98" data-offset-bottom="98">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">LOGO</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#horario">HORARIOS</a></li>
+								<li><a href="#como-llegar">COMO LLEGAR</a></li>
+								<li><a href="#geleria">GALERÍA</a></li>
+								<li><a href="#contacto">CONTACTO</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	<!-- Horarios -->
+		<div class="container divider-top" id="horario">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-7 col-md-2 col-md-offset-8">
+							<h2>HORARIOS</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 horarios">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#lunes" data-toggle="tab">LUNES</a></li>
+								<li><a href="#martes" data-toggle="tab">MARTES</a></li>
+								<li><a href="#miercoles" data-toggle="tab">MIECOLES</a></li>
+								<li><a href="#jueves" data-toggle="tab">JUEVES</a></li>
+								<li><a href="#viernes" data-toggle="tab">VIERNES</a></li>
+								<li><a href="#sabado" data-toggle="tab">SABADO</a></li>
+								<li><a href="#domingo" data-toggle="tab">DOMINGO</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="lunes">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane" id="martes">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane" id="miercoles">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane" id="jueves">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane" id="viernes">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane" id="sabado">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane" id="domingo">
+									<div class="panel panel-default">
+										<!-- Table -->
+										<table class="table">
+											<thead>
+												<tr>
+													<th>HORA</th>
+													<th>ESTADO</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>17:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>18:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>19:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>20:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>21:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>22:00hs</td>
+													<td><span class="ocuped">OCUPADA</span></td>
+													<td><a href="#" title="" class="disable">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>23:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+												<tr>
+													<td>24:00hs</td>
+													<td><span>LIBRE</span></td>
+													<td><a href="#" title="">RESERVAR</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Como llegar -->
+		<div class="container divider-top" id="como-llegar">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-7 col-md-2 col-md-offset-8">
+							<h2>COMO LLEGAR</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+							<div class="como-llegar">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d104749.29056953591!2d-56.18366435129716!3d-34.87091555516815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1403638613259" width="" height="" frameborder="0" style="border:0"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Galeria -->
+		<div class="container divider-top" id="geleria">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-7 col-md-2 col-md-offset-8">
+							<h2>GALERÍA</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+							<div class="galeria">
+								<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-generic" data-slide-to="1"></li>
+										<li data-target="#carousel-generic" data-slide-to="2"></li>
+									</ol>
+
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner">
+										<div class="item active">
+											<img src="img/slide-img-01.jpg" alt="">
+											<div class="carousel-caption">
+												Nuestras canchas iluminadas
+											</div>
+										</div>
+										<div class="item">
+											<img src="img/slide-img-01.jpg" alt="">
+											<div class="carousel-caption">
+												Nuestras canchas iluminadas
+											</div>
+										</div>
+										<div class="item">
+											<img src="img/slide-img-01.jpg" alt="">
+											<div class="carousel-caption">
+												Nuestras canchas iluminadas
+											</div>
+										</div>
+									</div>
+
+									<!-- Controls -->
+									<a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="right carousel-control" href="#carousel-generic" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Contacto -->
+		<div class="container divider-top" id="contacto">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-7 col-md-2 col-md-offset-8">
+							<h2>CONTACTO</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+							<div class="contacto">
+								<div class="row">
+									<div class="col-sm-8">
+										<input type="text" name="" value="" placeholder="Nombre" class="form-control">
+										<input type="text" name="" value="" placeholder="Mail" class="form-control">
+										<textarea name="" class="form-control" placeholder="Mensaje"></textarea>
+									</div>
+									<div class="col-sm-4">
+										<h3>Dirección:</h3>
+										<p>18 de Julio 3452 esq. Roxlo</p>
+										<h3>Teléfono:</h3>
+										<p>2123 4567</p>
+									</div>
+									<div class="col-sm-offset-8 col-sm-4">
+										<button class="btn btn-block" type="submit">ENVIAR</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Footer -->
+		<footer>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#horario">HORARIOS</a></li>
+								<li><a href="#como-llegar">COMO LLEGAR</a></li>
+								<li><a href="#geleria">GALERÍA</a></li>
+								<li><a href="#contacto">CONTACTO</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<h4><a href="#" title=""><i class="fa fa-facebook"></i> </a><a href="#" title=""><i class="fa fa-twitter"></i></a></h4>
+			<h5>© F5. Todos los derechos reservados.</h5>
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			// Smooth scroll
+			$(function() {
+			  $('nav a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+	</body>
+</html>
